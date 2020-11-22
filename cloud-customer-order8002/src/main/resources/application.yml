@@ -1,0 +1,12 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: cloud-order-service
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka8000.com:8000/eureka, http://eureka8003.com:8003/eureka
